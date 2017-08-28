@@ -1,0 +1,41 @@
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+.head-art
+{
+    background: #A4C339;
+    width: 100%;
+    height: 90px;
+    padding-top: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    color: #fff;
+}
+.head-art .header
+{
+    font-size: 18px;
+    color:#fff;
+}
+.menu-1, .menu-2
+{
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 10px;
+    margin-left: 20px;
+}
+.menu-1 .glyphicon, .menu-2 .glyphicon {
+    padding-right: 10px;
+    font-size: 20px;
+}
+
+
+@media (max-width: 600px) {
+    .head-art .header {
+        font-size: 15px;
+    }
+    .menu-1 .glyphicon, .menu-2 .glyphicon {
+        font-size: 18px;
+    }
+}

@@ -1,0 +1,18 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-12 text-center head-art">
+        <div class="menu-1">
+            <span class="glyphicon glyphicon-globe" aria-hidden="true"></span>
+            <a class="header" [routerLink]="['/']">See Weather for any location</a>
+        </div>
+        <div class="menu-2">
+            <span class="glyphicon glyphicon-home" aria-hidden="true"></span>
+            <a class="header"[routerLink]="['weather-location']">See Weather for your current location</a>
+        </div>
+    </div>
+  </div>
+</div>
+<router-outlet></router-outlet>
+<!--<app-weather-item></app-weather-item>-->
+
+
