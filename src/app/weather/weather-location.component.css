@@ -12,14 +12,16 @@
 }
 .AnotherFeature {
     font-size: 18px;
-    width: 100%;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    width: 30%;
+    padding: 30px 0;
 }
 .AnotherTable {
     display: flex;
-    justify-content: center;
-    width: 100%;
+    justify-content: flex-start;
+    background: #EFE5E5;
+    color: #0C0D0F;
+    border-bottom: 1px solid #435B8C;
+    padding: 5px 40px;
 }
 .descriptionMain .descriptionWeather {
     font-size: 30px;
@@ -31,6 +33,8 @@
 .backGr {
    background-color: #FFA64C;
    border-top: 2px solid #fff;
+   display: flex;
+   justify-content: center;
 }
 
 
@@ -41,5 +45,15 @@
     .icon img {
         width: 50%;
         height: 50%;
+    }
+    .AnotherFeature {
+        width: 80%;
+    }
+}
+
+
+@media (min-width: 601px) and (max-width: 1300px) {
+    .AnotherFeature {
+        width: 70%;
     }
 }
