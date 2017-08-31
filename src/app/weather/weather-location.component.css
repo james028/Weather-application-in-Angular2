@@ -8,6 +8,7 @@
     justify-content: center;
     font-size: 36px; 
     margin: 20px auto 0;
+    font-weight: bold;
 }
 .AnotherFeature {
     font-size: 18px;
@@ -25,9 +26,11 @@
 }
 .descriptionMain .descriptionTemp {
     font-size: 40px;
+    font-weight: bold;
 }
 .backGr {
    background-color: #FFA64C;
+   border-top: 2px solid #fff;
 }
 
 

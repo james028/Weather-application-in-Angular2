@@ -4,7 +4,7 @@
                 <form (ngSubmit)="onSubmit(form)" #form="ngForm">
                   <div class="search">
                 	  <input id="searchCity" name="city" ngModel #city="ngModel" placeholder="Enter the city...">
-                	  <button id="btn" class="btn btn-primary btn-search">Szukaj</button>
+                	  <button id="btn" class="btn btn-primary btn-search">Search</button>
                   </div>
                 </form>
             </div>
@@ -14,11 +14,11 @@
             <div class="col-md-12 text-center firstGr">
                 <div class="bigCity">
                     <p>{{myWeather.cityName}}</p>
-                    <p> , {{myWeather.country}}</p>
+                    <p>&nbsp;{{myWeather.country}}</p>
                 </div>
                 <div class="iconAndDesc">
                     <div class="icon">
-                        <img src="http://weather.omgez911.com/icons/{{myWeather.img}}.png" alt="icon">
+                        <img src="http://weather.omgez911.com/icons/{{myWeather.img}}.png" alt=" ">
                     </div>
                     <div class="descriptionMain">
                         <h4 class="descriptionWeather">{{myWeather.description}}</h4>
