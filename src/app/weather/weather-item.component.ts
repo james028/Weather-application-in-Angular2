@@ -13,7 +13,6 @@ import { WeatherService } from './weather.service';
 export class WeatherItemComponent implements OnInit {
   
   myWeather: Weather;
-  location;
   
   constructor(private WService: WeatherService) {}
 

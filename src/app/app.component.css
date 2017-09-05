@@ -1,7 +1,3 @@
-
-body {
-    font-family: 'Roboto', sans-serif;
-}
 .head-art
 {
     background: #A4C339;
@@ -12,6 +8,7 @@ body {
     flex-direction: column;
     justify-content: flex-start;
     color: #fff;
+    font-family: 'Roboto', sans-serif;
 }
 .head-art .header
 {

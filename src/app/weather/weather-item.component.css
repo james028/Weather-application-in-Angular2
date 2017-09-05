@@ -1,6 +1,7 @@
 .containerFl {
     color: #ffffff;
     background-color: #2D2D2D;
+    font-family: 'Roboto', sans-serif;
 }
 #searchCity {
     color: #000000;
@@ -9,17 +10,18 @@
     padding-left: 10px;
 }
 .icon {
-    width: 150px;
-    height: 100x;
     padding-left: 20px; 
+    
 }
 .icon img {
-    width: 100%;
+    width: 100px;
+    height: 100px;
 }
 .AnotherFeature {
     width: 30%;
     font-size: 18px;
     padding: 30px 0;
+    font-family: 'Roboto', sans-serif;
 }
 .AnotherTable {
     display: flex;
@@ -27,7 +29,15 @@
     background: #fff;
     color: #435B8C;
     border-bottom: 1px solid #435B8C;
-    padding: 5px 40px;
+    padding: 5px 20px;
+}
+.AnotherTable:first-child {
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+.AnotherTable:last-child {
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
 }
 .firstGr {
     margin-bottom: 40px;
@@ -48,7 +58,6 @@
     flex-direction: row;
     justify-content: center;
     font-size: 42px;
-    font-weight: bold;
 }
 .search {
     margin: 60px auto 50px;
@@ -64,10 +73,10 @@
     font-weight: bold;
 }
 .descriptionMain .descriptionWeather {
-    font-size: 32px;
+    font-size: 28px;
 }
 .descriptionMain .descriptionTemp {
-    font-size: 50px;
+    font-size: 48px;
     font-weight: bold;
 }
 
@@ -86,12 +95,28 @@
     	font-size: 34px;
     }
     .AnotherFeature {
-        width: 80%;
+        width: 90%;
+        font-size: 14px;
     }
+    #searchCity {
+        width: 200px;
+        height: 30px;
+        padding-left: 10px;
+    }
+    .btn-search {
+        width: 100px;
+        height: 30px;
+        font-size: 16px;
+    }
+    
+
+
+
 }
 
 @media (min-width: 601px) and (max-width: 1300px) {
     .AnotherFeature {
-        width: 70%;
+        width: 80%;
     }
 }
+
