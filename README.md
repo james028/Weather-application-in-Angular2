@@ -1,12 +1,12 @@
 Weather application made in Angular2.
 
-link: 
+link: www.searchweather.pl
 
 
 I made weather application in Angular2.
 I use API from https://openweathermap.org/.
 
-In my app I made two linksks. We can see weather for any location and We can see weather for your current location.
+In my app I made two links. We can see weather for any location and We can see weather for your current location.
 This app is full responsive.
 
 
@@ -22,4 +22,4 @@ Features Angular2 who I use:
 
 
 
-In futere I want to do new link with weather forecast...
+In future I want to do new link with weather forecast...
