@@ -3,6 +3,11 @@
     background-color: #2D2D2D;
     font-family: 'Roboto', sans-serif;
 }
+.title {
+    font-size: 24px;
+    margin-top: 20px;
+    margin-bottom: -30px;
+}
 #searchCity {
     color: #000000;
     width: 220px;
@@ -14,8 +19,8 @@
     
 }
 .icon img {
-    width: 100px;
-    height: 100px;
+    width: 140px;
+    height: 140px;
 }
 .AnotherFeature {
     width: 30%;
@@ -107,6 +112,9 @@
         width: 100px;
         height: 30px;
         font-size: 16px;
+    }
+    .title {
+       font-size: 20px; 
     }
     
 

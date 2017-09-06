@@ -41,6 +41,7 @@
 .descriptionMain .descriptionTemp {
     font-size: 40px;
     font-weight: bold;
+    margin-bottom: 20px;
 }
 .backGr {
    background-color: #FFA64C;
@@ -51,6 +52,15 @@
 .icon img {
     width: 130px;
     height: 130px;
+}
+.locBtn {
+    margin: 30px auto;
+    width: 180px;
+    height: 45px;
+    color: #000000;
+    background: #606BB1;
+    border: none;
+
 }
 
 

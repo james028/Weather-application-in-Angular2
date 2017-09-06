@@ -1,9 +1,10 @@
 <div class="container-fluid containerFl">
         <div class="row">
             <div class="col-md-12 text-center">
+                <p class="title">Enter the place to see a weather</p>
                 <form (ngSubmit)="onSubmit(form)" #form="ngForm">
                   <div class="search">
-                	  <input id="searchCity" name="city" ngModel #city="ngModel" placeholder="Enter the city...">
+                	  <input id="searchCity" name="city" ngModel #city="ngModel" placeholder="City...">
                 	  <button id="btn" class="btn btn-primary btn-search">Search</button>
                   </div>
                 </form>
@@ -18,7 +19,7 @@
                 </div>
                 <div class="iconAndDesc">
                     <div class="icon">
-                        <img src="http://openweathermap.org/img/w/{{myWeather.img}}.png" alt=" ">
+                        <img src="./assets/icons/{{myWeather.img}}.png" alt=" ">
                     </div>
                     <div class="descriptionMain">
                         <h4 class="descriptionWeather">{{myWeather.description}}</h4>

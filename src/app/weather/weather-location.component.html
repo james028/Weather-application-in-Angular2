@@ -1,13 +1,14 @@
 <div class="container-fluid contMain">
         <div class="row">
             <div class="col-md-12 text-center">
+                <button class="locBtn" (click)="ClickBtn()" >Click to see weather</button>
                 <div class="bigCity">
                     <p>{{myWeather.cityName}}</p>
                     <p>&nbsp;{{myWeather.country}}</p>
                 </div>
                 <div class="iconAndDesc">
                     <div class="icon">
-                        <img src="http://openweathermap.org/img/w/{{myWeather.img}}.png" alt=" ">
+                        <img src="./assets/icons/{{myWeather.img}}.png" alt=" ">
                     </div>
                     <div class="descriptionMain">
                         <p class="descriptionWeather">{{myWeather.description}}</p>
@@ -26,4 +27,4 @@
                 </div>
             </div>
         </div>  
-    </div>
+    </div> 

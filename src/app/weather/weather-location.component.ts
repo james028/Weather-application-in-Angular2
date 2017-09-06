@@ -9,14 +9,14 @@ import { WeatherService } from './weather.service';
   templateUrl: './weather-location.component.html',
   styleUrls: ['./weather-location.component.css']
 })
-export class WeatherLocationComponent implements OnInit {
+export class WeatherLocationComponent {
 
   myWeather: Weather;
   location;
 
   constructor(private WService: WeatherService) { }
 
-  ngOnInit() {
+  ClickBtn() {
     //this.myWeather = this.WService.WeatherNow();
     navigator.geolocation.getCurrentPosition(pos => {
         this.location = pos.coords;
