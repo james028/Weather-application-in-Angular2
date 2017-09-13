@@ -23,10 +23,10 @@ export class WeatherLocationComponent {
 
         console.log(this.location);
 
-        const lat = this.location.latitude;
-        const lon = this.location.longitude;
+        const latt = this.location.latitude;
+        const lonn = this.location.longitude; 
 
-        this.WService.locationWeather().subscribe(
+        this.WService.locationWeather(latt, lonn).subscribe(
           data => {
             console.log(data);
             this.myWeather = new Weather(

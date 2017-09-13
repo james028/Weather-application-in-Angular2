@@ -16,8 +16,8 @@ export class WeatherService {
 
   constructor(private _http: Http) { }
 
-  locationWeather() {
-    return this._http.get('http://api.openweathermap.org/data/2.5/weather?appid=78bf6de67a4aafd47624d7c71140bc85&lat=51.151&lon=21.970&units=metric')
+  locationWeather(lat: string, lon: string) {
+    return this._http.get('http://api.openweathermap.org/data/2.5/weather?appid=78bf6de67a4aafd47624d7c71140bc85&lat=' + lat + '&lon=' + lon + '&units=metric')
                 .map((response: Response) => response.json());
   }
 
