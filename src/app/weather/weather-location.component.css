@@ -62,7 +62,9 @@
     color: #fff;
     border-radius: 5px;
     border: none;
-
+}
+.locBtn:hover {
+    background: #01051D;
 }
 
 
