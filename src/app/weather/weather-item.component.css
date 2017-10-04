@@ -100,7 +100,7 @@
     	font-size: 34px;
     }
     .AnotherFeature {
-        width: 90%;
+        min-width: 90%;
         font-size: 14px;
     }
     #searchCity {
@@ -122,9 +122,9 @@
 
 }
 
-@media (min-width: 601px) and (max-width: 1300px) {
+@media (min-width: 601px) and (max-width: 1000px) {
     .AnotherFeature {
-        width: 40%;
+        min-width: 70%;
     }
 }
 

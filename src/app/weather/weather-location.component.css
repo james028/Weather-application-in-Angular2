@@ -82,8 +82,8 @@
 }
 
 
-@media (min-width: 601px) and (max-width: 1300px) {
+@media (min-width: 601px) and (max-width: 1000px) {
     .AnotherFeature {
-        width: 40%;
+        min-width: 70%;
     }
 }
