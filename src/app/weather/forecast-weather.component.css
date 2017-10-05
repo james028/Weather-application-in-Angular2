@@ -46,7 +46,7 @@
       -webkit-box-pack: center;
       -webkit-justify-content: center;
       -ms-flex-pack: center;
-      justify-content: center; }
+      justify-content: flex-start; }
     .iconAndDesc .bigCity {
       font-size: 40px; }
     .iconAndDesc .descriptionTemp {
@@ -55,7 +55,15 @@
     .iconAndDesc .descriptionTempNight {
       font-size: 24px; }
     .iconAndDesc .descriptionWeather {
-      margin-top: 30px; }
+      margin-top: 30px;
+      display: flex;
+      justify-content: center;
+     }
+     .iconAndDesc .descriptionWind {
+      margin-top: 30px;
+      display: flex;
+      justify-content: center;
+     }
   
   .foreDays {
     width: 100%;
@@ -95,3 +103,49 @@
     .foreDays .descriptionWeather {
       margin-top: 25px; }
   
+
+
+      @media (max-width: 600px) {
+          .containerFl .title {
+            font-size: 16px;
+          }
+          .containerFl .search #searchCity {
+            width: 150px;
+          }
+          .containerFl .search #searchDays {
+            width: 110px;
+          }
+          .foreDays img {
+            width: 70px;
+            height: 70px;
+            margin-top: 10px;
+          }
+          .foreDays .descTemp .descriptionTemp {
+            margin-right: 3px;
+            font-size: 22px;
+          }
+          .foreDays .descTemp .descriptionTempNight {
+            font-size: 14px;
+          }
+          .foreDays .descriptionWeather {
+            margin-top: 15px;
+            font-size: 14px;
+          }
+          .foreDays .foreDay {
+            font-size: 24px;
+            margin-top: 30px;
+          }
+          .iconAndDesc .bigCity {
+            font-size: 34px;
+          }
+          .iconAndDesc .descriptionTemp {
+            font-weight: bold;
+            font-size: 36px; 
+          }
+          .iconAndDesc .descriptionTempNight {
+            font-size: 20px; 
+          }
+          .iconAndDesc .descriptionWeather {
+            margin-top: 20px; 
+          }
+      }

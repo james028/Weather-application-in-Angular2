@@ -1,4 +1,4 @@
-.head-art
+/*.head-art
 {
     background: #A4C339;
     width: 100%;
@@ -28,4 +28,95 @@
     .head-art .header {
         font-size: 15px;
     }
-}
+}*/
+nav {
+    height: 80px;
+    width: 100%;
+    color: #fff;
+    background: #A4C339;
+  }
+  nav ul 
+  {
+    margin: 15px auto;
+  }
+  nav li 
+  {
+    display: inline;
+    float: left;
+  }
+  nav a 
+  {
+    display: inline-block;
+    width: 220px;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px 0;
+    color: #fff;   
+  }
+  nav a#openup 
+  {
+    display: none;
+  }
+  nav li a:hover
+  {
+      color: orangered;
+      text-decoration: none;
+  }
+
+
+
+
+  @media (max-width: 600px) {
+    
+      nav {
+        height: auto;
+        border-bottom: 0;
+      }
+      nav ul {
+        display: none;
+        height: auto;
+        margin: 0 auto;
+      }
+      nav li {
+        width: 100%;
+        float: left;
+        position: relative;
+      }
+      nav a {
+        text-align: left;
+        width: 100%;
+        background: #A4C339;
+        color: #fff;
+      }
+      nav a#openup:after {
+        content: "|||";
+        transform: rotate(-90deg);
+        -ms-transform: rotate(-90deg);
+        /* IE 9 */
+        -webkit-transform: rotate(-90deg);
+        /* Safari and Chrome */
+        width: 30px;
+        height: 30px;
+        display: inline-block;
+        position: absolute;
+        right: 15px;
+        top: 2px;
+      }
+      nav a#openup {
+        display: block;
+        background-color: #A4C339;;
+        width: 100%;
+        position: relative;
+        color: #fff;
+        height: 50px;
+        border-top: 1px solid black;
+      }
+    }
+    .cf:before, .cf:after {
+      content: "";
+      display: table;
+    }
+    .cf:after {
+      clear: both;
+    }
+   

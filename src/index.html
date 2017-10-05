@@ -23,11 +23,25 @@
   <app-root></app-root>
   <script>
       $(document).ready(function (){
-        $(".navbar-header").click(function(){
-          $(this).css("background", "red");
-      })
-    
-})
+      
+        menu = $('nav ul');
+
+  $('#openup').on('click', function(e) {
+    e.preventDefault();
+    menu.slideToggle(); //funkcja rozwijajaca menu
+  });
+
+
+  $('nav li').on('click', function(e) {
+    var w = $(window).width();
+      if(w < 700 ) {
+      menu.slideToggle();  
+    }
+  });
+  $('.open-menu').height($(window).height());
+  })
+
+
   </script>
 </body>
 </html>

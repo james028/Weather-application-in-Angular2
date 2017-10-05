@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
 
-//import { Weather } from './weather';
-//import { WeatherService } from './weather.service';
+import { Forecast } from './forecast';
+import { WeatherService } from './weather.service';
 
 @Component({
   selector: 'app-forecast-weather',
@@ -11,13 +11,15 @@ import { NgForm } from '@angular/forms';
 })
 export class ForecastWeatherComponent implements OnInit {
 
-  constructor() { }
+  constructor(private WService: WeatherService) { }
 
   ngOnInit() {
   }
  
 
-  addForeWeather() {
-    
+  addForeWeather(cit, day) {
+        this.WService.forecastWeather(cit, day).subscribe(
+            
+        );
   }
 }

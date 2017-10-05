@@ -1,11 +1,11 @@
 .containerFl {
-    color: #ffffff;
-    background-color: #2D2D2D;
+    color: #000;
+    background-color: #fff;
     font-family: 'Roboto', sans-serif;
 }
 .title {
     font-size: 24px;
-    margin-top: 20px;
+    margin-top: 35px;
     margin-bottom: -30px;
 }
 #searchCity {
@@ -31,25 +31,24 @@
 .AnotherTable {
     display: flex;
     justify-content: flex-start;
-    background: #fff;
+    background: #eee;
     color: #435B8C;
     border-bottom: 1px solid #435B8C;
     padding: 5px 20px;
 }
 .AnotherTable:first-child {
-    border-top-left-radius: 6px;
-    border-top-right-radius: 6px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
 }
 .AnotherTable:last-child {
-    border-bottom-left-radius: 6px;
-    border-bottom-right-radius: 6px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
 }
 .firstGr {
     margin-bottom: 40px;
 }
 .backGr {
-    background: #435B8C;
-    border-top: 1px solid #fff;
+    background: #fff;
     display: flex;
     justify-content: center;
 }
