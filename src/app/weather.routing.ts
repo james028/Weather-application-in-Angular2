@@ -3,9 +3,11 @@ import { ModuleWithProviders } from '@angular/core';
 
 import { WeatherItemComponent } from './weather/weather-item.component';
 import { WeatherLocationComponent } from './weather/weather-location.component';
+import { ForecastWeatherComponent } from './weather/forecast-weather.component';
 
 const ROUTER: Routes = [
     {path:'', component: WeatherItemComponent},
+    {path: 'weather-forecast', component: ForecastWeatherComponent},
     {path: 'weather-location', component: WeatherLocationComponent}
 ];
 

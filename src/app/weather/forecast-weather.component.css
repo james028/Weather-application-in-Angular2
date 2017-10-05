@@ -1,0 +1,97 @@
+.containerFl {
+    color: #000;
+    background: #fff; }
+    .containerFl .title {
+      font-size: 24px;
+      margin-top: 20px;
+      margin-bottom: -30px; }
+    .containerFl .search {
+      margin: 60px auto 50px;
+      border: none;
+      border-color: #fff; }
+      .containerFl .search #searchCity {
+        color: #000000;
+        width: 220px;
+        height: 40px;
+        padding-left: 10px; }
+      .containerFl .search #searchDays {
+        height: 40px;
+        width: 150px;
+        color: #000000; }
+  
+  .iconAndDesc {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin: 20px auto 40px; }
+    .iconAndDesc .bigCity {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center; }
+    .iconAndDesc .descTemp {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center; }
+    .iconAndDesc .bigCity {
+      font-size: 40px; }
+    .iconAndDesc .descriptionTemp {
+      font-weight: bold;
+      font-size: 40px; }
+    .iconAndDesc .descriptionTempNight {
+      font-size: 24px; }
+    .iconAndDesc .descriptionWeather {
+      margin-top: 30px; }
+  
+  .foreDays {
+    width: 100%;
+    height: auto;
+    background: #EEEEEE;
+    border: 1px solid black;
+    margin-bottom: 3px; }
+    .foreDays .foreDay {
+      font-size: 30px;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: end;
+      -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+      justify-content: flex-end; }
+    .foreDays img {
+      width: 100px;
+      height: 100px; }
+    .foreDays .descTemp {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      margin-top: 15px; }
+      .foreDays .descTemp .descriptionTemp {
+        font-size: 44px;
+        font-weight: bold;
+        margin-right: 10px; }
+      .foreDays .descTemp .descriptionTempNight {
+        font-size: 22px; }
+    .foreDays .descriptionWeather {
+      margin-top: 25px; }
+  

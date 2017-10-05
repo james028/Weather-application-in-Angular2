@@ -10,12 +10,14 @@ import { WeatherService } from './weather/weather.service';
 import { WeatherLocationComponent } from './weather/weather-location.component';
 
 import { WeatherRouting } from './weather.routing';
+import { ForecastWeatherComponent } from './weather/forecast-weather.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     WeatherItemComponent,
     WeatherLocationComponent,
+    ForecastWeatherComponent,
   ],
   imports: [
     BrowserModule,

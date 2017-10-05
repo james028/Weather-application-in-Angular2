@@ -27,4 +27,9 @@ export class WeatherService {
                 .map((response: Response) => response.json());
   }
 
+  forecastWeather(city: string, days: number) {
+        return this._http.get('')
+                .map((response: Response) => response.json());
+  }
+
 }
