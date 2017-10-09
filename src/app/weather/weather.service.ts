@@ -4,7 +4,7 @@ import { Http,Response } from '@angular/http';
 import 'rxjs/Rx';
 
 import { Weather } from './weather';
-import { Forecast } from './forecast';
+import { Forecast } from './forecast-weather/forecast';
 
 @Injectable()
 export class WeatherService {

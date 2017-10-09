@@ -1,0 +1,137 @@
+.containerFl {
+    color: #000;
+    background-color: #fff;
+    font-family: 'Roboto', sans-serif;
+}
+.title {
+    font-size: 24px;
+    margin-top: 35px;
+    margin-bottom: -30px;
+}
+#searchCity {
+    color: #000000;
+    width: 220px;
+    height: 40px;
+    padding-left: 10px;
+}
+.icon {
+    padding-left: 20px; 
+    
+}
+.icon img {
+    width: 140px;
+    height: 140px;
+}
+.AnotherFeature {
+    width: 30%;
+    font-size: 18px;
+    padding: 18px 0;
+    font-family: 'Roboto', sans-serif;
+}
+.AnotherTable {
+    display: flex;
+    justify-content: flex-start;
+    background: #eee;
+    color: #435B8C;
+    border-bottom: 1px solid #435B8C;
+    padding: 5px 20px;
+}
+.AnotherTable:first-child {
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+.AnotherTable:last-child {
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+.firstGr {
+    margin-bottom: 40px;
+}
+.backGr {
+    background: #fff;
+    display: flex;
+    justify-content: center;
+}
+.iconAndDesc {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+}
+.bigCity {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 42px;
+}
+.search {
+    margin: 60px auto 50px;
+    border: none;
+    border-color: #fff;
+}
+.btn-search {
+    background: green;
+    width: 120px;
+    height: 40px;
+    border: none;
+    font-size: 19px;
+    font-weight: bold;
+}
+.descriptionMain .descriptionWeather {
+    font-size: 28px;
+}
+.descriptionMain .descriptionTemp {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+.descriptionSunrise {
+    display: flex;
+    justify-content: flex-start;
+    font-size: 18px;
+}
+.descriptionSunrise .glyphicon {
+    padding-right: 8px;
+}
+
+
+
+@media (max-width: 600px) {
+    
+    .descriptionMain .descriptionTemp {
+    font-size: 40px;
+    }
+    .descriptionMain .descriptionWeather {
+    font-size: 30px;
+    }
+    .bigCity {
+    	font-size: 34px;
+    }
+    .AnotherFeature {
+        min-width: 70%;
+        font-size: 14px;
+    }
+    #searchCity {
+        width: 200px;
+        height: 30px;
+        padding-left: 10px;
+    }
+    .btn-search {
+        width: 100px;
+        height: 30px;
+        font-size: 14px;
+    }
+    .title {
+       font-size: 20px; 
+    }
+    
+
+
+
+}
+
+@media (min-width: 601px) and (max-width: 1000px) {
+    .AnotherFeature {
+        min-width: 70%;
+    }
+}
+

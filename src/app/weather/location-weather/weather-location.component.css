@@ -1,0 +1,89 @@
+.contMain {
+    background-color: #FE7622;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+}
+.bigCity {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 36px; 
+    margin: 20px auto 0;
+}
+.AnotherFeature {
+    font-size: 18px;
+    width: 30%; 
+    padding: 30px 0;
+    font-family: 'Roboto', sans-serif;
+}
+.AnotherTable {
+    display: flex;
+    justify-content: flex-start;
+    background: #EFE5E5;
+    color: #0C0D0F;
+    border-bottom: 1px solid #435B8C;
+    padding: 5px 15px;
+}
+.AnotherTable:last-child {
+    border-bottom: none;
+}
+.AnotherTable:first-child {
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+.AnotherTable:last-child {
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+.descriptionMain .descriptionWeather {
+    font-size: 30px;
+}
+.descriptionMain .descriptionTemp {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.backGr {
+   background-color: #FFA64C;
+   border-top: 2px solid #fff;
+   display: flex;
+   justify-content: center;
+}
+.icon img {
+    width: 130px;
+    height: 130px;
+}
+.locBtn {
+    margin: 30px auto;
+    width: 180px;
+    height: 45px;
+    font-size: 17px;
+    background: #606BB1;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+}
+.locBtn:hover {
+    background: #01051D;
+}
+
+
+
+
+@media (max-width: 600px) { 
+    .icon img {
+        width: 50%;
+        height: 50%;
+    }
+    .AnotherFeature {
+        width: 70%;
+        font-size: 14px;
+    }
+}
+
+
+@media (min-width: 601px) and (max-width: 1000px) {
+    .AnotherFeature {
+        min-width: 70%;
+    }
+}

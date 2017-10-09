@@ -1,0 +1,63 @@
+<div class="container-fluid containerFl">
+  <div class="row">
+      <div class="col-md-12 text-center">
+          <p class="title">Enter the place and number of days to see the forecast weather</p>
+          <form [formGroup]="foreForm" (ngSubmit)="onSubmitFore()">
+            <div class="search">
+                <input id="searchCity" name="city" formControlName="foreCity" placeholder="City...">
+                <input id="searchDays" name="days" formControlName="foreDays" placeholder="(min: 1, max: 16)">
+                <button id="btn" class="btn btn-primary btn-search">Search</button>
+            </div>
+          </form>
+      </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12 text-center firstGr">
+        <div class="iconAndDesc">
+            <div class="icon">
+                <h3 class="foreDay1">{{myWeather.day * 1000 | date:'EEEE, MMMM d'}}</h3>
+                <img src="assets/icons/{{myWeather.img}}.png" alt=" ">
+            </div>
+            <div class="descriptionMain">
+                <div class="bigCity">
+                    <p>{{myWeather.cityName}}</p>
+                    <p>&nbsp;{{myWeather.country}}</p>
+                </div>
+                <div class="descTemp">
+                    <h2 class="descriptionTemp">{{myWeather.maxTemp}} &deg;C</h2>
+                    <h4 class="descriptionTempNight">{{myWeather.minTemp}} &deg;C</h4>
+                </div>
+                    <h4 class="descriptionWeather">{{myWeather.description}}</h4>
+                    <h4 class="descriptionWind">{{myWeather.wspeed}} m/s</h4>
+            </div>
+        </div>   
+    </div>
+</div>  
+  <div class="row">
+      <div class="col-md-8 col-md-offset-2 text-center">
+            <div class="foreDays" *ngFor="let oneWeather of ForecastArr">
+                <div class="row">
+                    <div class="col-md-3 col-sm-3 col-xs-3">
+                        <h3 class="foreDay">{{oneWeather.day * 1000 | date:'EEEE, MMMM d'}}</h3>
+                    </div>
+                    <div class="col-md-3 col-sm-3 col-xs-3 pad-img">
+                        <img src="assets/icons/{{oneWeather.icon}}.png" alt=" ">
+                    </div>
+                    <div class="col-md-3 col-sm-3 col-xs-3">
+                        <div class="descTemp">
+                            <h2 class="descriptionTemp">{{oneWeather.tempMax}} &deg;C</h2>
+                            <h4 class="descriptionTempNight">{{oneWeather.tempMin}} &deg;C</h4>
+                        </div>  
+                    </div>
+                    <div class="col-md-3 col-sm-3 col-xs-3">
+                        <h4 class="descriptionWeather">{{oneWeather.desc}}</h4>
+                        <h4 class="descriptionWind">
+                            <span class="glyphicon glyphicon-flag" aria-hidden="true"></span>
+                            {{oneWeather.wind}}&nbsp;m/s
+                        </h4>
+                    </div>
+                </div>
+             </div>
+      </div>
+  </div>
+</div> 

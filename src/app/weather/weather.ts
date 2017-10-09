@@ -10,6 +10,9 @@ export class Weather {
 		public wspeed: string,
 		public minTemp: string,
 		public maxTemp: string,
-		public cloud: string
+		public cloud: string,
+		public sunrise: string,
+		public sunset: string, 
+		public day: string
 	) {}
 } 

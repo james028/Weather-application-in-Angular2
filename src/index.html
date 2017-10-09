@@ -36,13 +36,15 @@
       }
       });
 
+
+      //jesli klikniesz na liste to wroci
     $('nav li').on('click', function(e) {
       var w = $(window).width();
-      if(w < 700 ) {
-      menu.slideToggle("slow");  
+      if(w < 1000 ) {
+      menu.hide("slow");  
     }
     });
-    $('.open-menu').height($(window).height());
+    $('.open-menu').width($(window).width());
     });
   })
 </script>

@@ -1,0 +1,45 @@
+<div class="container-fluid containerFl">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <p class="title">Enter the place to see the weather</p>
+                <form (ngSubmit)="onSubmit(form)" #form="ngForm">
+                  <div class="search">
+                	  <input id="searchCity" name="city" ngModel #city="ngModel" placeholder="City...">
+                	  <button id="btn" class="btn btn-primary btn-search">Search</button>
+                  </div>
+                </form>
+            </div>
+        </div>  
+
+        <div class="row">
+            <div class="col-md-12 text-center firstGr">
+                <div class="bigCity">
+                    <p>{{myWeather.cityName}}</p>
+                    <p>&nbsp;{{myWeather.country}}</p>
+                </div>
+                <div class="iconAndDesc">
+                    <div class="icon">
+                        <img src="./assets/icons/{{myWeather.img}}.png" alt=" ">
+                    </div>
+                    <div class="descriptionMain">
+                        <h4 class="descriptionWeather">{{myWeather.description}}</h4>
+                        <h2 class="descriptionTemp">{{myWeather.temp}} &deg;C</h2>
+                        <p class="descriptionSunrise"><span class="glyphicon glyphicon-arrow-up" aria-hidden="true"></span>
+ {{myWeather.sunrise*1000 | date:'HH:mm'}}</p>
+                        <p class="descriptionSunrise"><span class="glyphicon glyphicon-arrow-down" aria-hidden="true"></span>{{myWeather.sunset*1000 | date:'HH:mm'}}</p>
+                        
+                    </div>
+                </div>    
+            </div>
+            <div class="col-sm-12 backGr">
+                <div class="AnotherFeature">
+                    <span class="AnotherTable">Humidity: {{myWeather.humidity}} %</span>
+                    <span class="AnotherTable">Pressure: {{myWeather.pressure}} hPa</span>
+                    <span class="AnotherTable">Wind speed: {{myWeather.wspeed}} m/s</span>
+                    <span class="AnotherTable">Min. Temp. at the moment: {{myWeather.minTemp}} &deg;C</span>
+                    <span class="AnotherTable">Max. Temp. at the moment: {{myWeather.maxTemp}} &deg;C</span>
+                    <span class="AnotherTable">Cloudiness: {{myWeather.cloud}} %</span>
+                </div>
+            </div>
+        </div>  
+</div>
