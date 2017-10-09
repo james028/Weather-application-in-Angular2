@@ -9,12 +9,7 @@ import { Forecast } from './forecast';
 @Injectable()
 export class WeatherService {
 
-  //CurrentWeather: Weather = new Weather('City', '', '', '', '', '', '', '', '', '', '', '');
-
-  //WeatherNow() {
-    //return this.CurrentWeather;
-  //}
-
+  
   constructor(private _http: Http) { }
 
   locationWeather(lat: string, lon: string) {
@@ -29,8 +24,15 @@ export class WeatherService {
   }
 
   forecastWeather(city: string, days: number) {
-        return this._http.get('')
+        return this._http.get('http://api.openweathermap.org/data/2.5/forecast/daily?q=' + city + '&appid=78bf6de67a4aafd47624d7c71140bc85&units=metric&cnt=' + days )
                 .map((response: Response) => response.json());
   }
+
+
+  //CurrentWeather: Weather = new Weather('City', '', '', '', '', '', '', '', '', '', '', '');
+
+  //WeatherNow() {
+    //return this.CurrentWeather;
+  //}
 
 }

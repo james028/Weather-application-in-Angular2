@@ -1,61 +1,62 @@
 <div class="container-fluid containerFl">
   <div class="row">
       <div class="col-md-12 text-center">
-          <p class="title">Enter the place to see a forecast weather</p>
-          <form>
+          <p class="title">Enter the place and number of days to see the forecast weather</p>
+          <form [formGroup]="foreForm" (ngSubmit)="onSubmitFore()" (ngSubmit)="onSubmit(form)" #form="ngForm">
             <div class="search">
-                <input id="searchCity" name="city" placeholder="City...">
-                <input id="searchDays" name="days" placeholder="(min: 1, max: 16)">
+                <input id="searchCity" name="city" formControlName="foreCity" placeholder="City...">
+                <input id="searchDays" name="days" formControlName="foreDays" placeholder="(min: 1, max: 16)">
                 <button id="btn" class="btn btn-primary btn-search">Search</button>
             </div>
           </form>
       </div>
   </div>  
-
+<div class="xx">
   <div class="row">
       <div class="col-md-12 text-center firstGr">
           <div class="iconAndDesc">
               <div class="icon">
-                  <h3 class="foreDay1">Friday</h3>
-                  <img src="assets/icons/02d.png" alt=" ">
+                  <h3 class="foreDay1">{{myWeather.day}}</h3>
+                  <img src="assets/icons/{{oneWeather.icon}}.png" alt=" ">
               </div>
               <div class="descriptionMain">
                   <div class="bigCity">
-                      <p>Barcelona</p>
-                      <p>&nbsp;ES</p>
+                      <p>{{myWeather.cityName}}</p>
+                      <p>&nbsp;{{myWeather.country}}</p>
                   </div>
                   <div class="descTemp">
-                      <h2 class="descriptionTemp">24 &deg;C</h2>
-                      <h4 class="descriptionTempNight">16 &deg;C</h4>
+                      <h2 class="descriptionTemp">{{myWeather.tempMax}} &deg;C</h2>
+                      <h4 class="descriptionTempNight">{{myWeather.tempMin}} &deg;C</h4>
                   </div>
-                      <h4 class="descriptionWeather">shower rain</h4>
-                      <h4 class="descriptionWind">4.67 m/s</h4>
+                      <h4 class="descriptionWeather">{{myWeather.desc}}</h4>
+                      <h4 class="descriptionWind">{{myWeather.wind}} m/s</h4>
               </div>
           </div>   
       </div>
   </div>  
   <div class="row">
       <div class="col-md-8 col-md-offset-2 text-center">
-          <div class="foreDays">
-              <div class="row">
-                  <div class="col-md-3 col-sm-3 col-xs-3">
-                      <h3 class="foreDay">Friday</h3>
-                  </div>
-                  <div class="col-md-3 col-sm-3 col-xs-3">
-                      <img src="assets/icons/02d.png" alt=" ">
-                  </div>
-                  <div class="col-md-3 col-sm-3 col-xs-3">
-                      <div class="descTemp">
-                          <h2 class="descriptionTemp">24 &deg;C</h2>
-                          <h4 class="descriptionTempNight">16 &deg;C</h4>
-                      </div>  
-                  </div>
-                  <div class="col-md-3 col-sm-3 col-xs-3">
-                      <h4 class="descriptionWeather">partly cloudly shower rain</h4>
-                      <h4 class="descriptionWind">4.67 m/s</h4>
-                  </div>
-              </div>
-          </div>
+            <div class="foreDays" *ngFor="let oneWeather of ForecastArr">{{oneWeather.cnt}}
+                <div class="row">
+                    <div class="col-md-3 col-sm-3 col-xs-3">
+                        <h3 class="foreDay">{{oneWeather.day | date:'short'}}</h3>
+                    </div>
+                    <div class="col-md-3 col-sm-3 col-xs-3">
+                        <img src="assets/icons/{{oneWeather.icon}}.png" alt=" ">
+                    </div>
+                    <div class="col-md-3 col-sm-3 col-xs-3">
+                        <div class="descTemp">
+                            <h2 class="descriptionTemp">{{oneWeather.tempMax}} &deg;C</h2>
+                            <h4 class="descriptionTempNight">{{oneWeather.tempMin}} &deg;C</h4>
+                        </div>  
+                    </div>
+                    <div class="col-md-3 col-sm-3 col-xs-3">
+                        <h4 class="descriptionWeather">{{oneWeather.desc}}</h4>
+                        <h4 class="descriptionWind">{{oneWeather.wind}}</h4>
+                    </div>
+                </div>
+             </div>
       </div>
   </div>
+</div>
 </div>

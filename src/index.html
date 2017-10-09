@@ -22,27 +22,30 @@
 <body>
   <app-root></app-root>
   <script>
-      $(document).ready(function (){
-      
-        menu = $('nav ul');
+  $(document).ready(function(){
+    
+    menu = $('nav ul');
+    $('#openup').on('click', function(e) {
+      e.preventDefault();
+      menu.slideToggle("slow"); //metoda rozwijajaca menu
 
-  $('#openup').on('click', function(e) {
-    e.preventDefault();
-    menu.slideToggle(); //funkcja rozwijajaca menu
-  });
+      $(window).resize(function() {
+        var w = $(this).width();
+        if(w > 700 && menu.is(':hidden')) {
+        menu.removeAttr('style'); 
+      }
+      });
 
-
-  $('nav li').on('click', function(e) {
-    var w = $(window).width();
+    $('nav li').on('click', function(e) {
+      var w = $(window).width();
       if(w < 700 ) {
-      menu.slideToggle();  
+      menu.slideToggle("slow");  
     }
-  });
-  $('.open-menu').height($(window).height());
+    });
+    $('.open-menu').height($(window).height());
+    });
   })
-
-
-  </script>
+</script>
 </body>
 </html>
  

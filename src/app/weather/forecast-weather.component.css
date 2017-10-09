@@ -2,7 +2,7 @@
     color: #000;
     background: #fff; }
     .containerFl .title {
-      font-size: 24px;
+      font-size: 20px;
       margin-top: 20px;
       margin-bottom: -30px; }
     .containerFl .search {
@@ -16,7 +16,7 @@
         padding-left: 10px; }
       .containerFl .search #searchDays {
         height: 40px;
-        width: 150px;
+        width: 115px;
         color: #000000; }
   
   .iconAndDesc {
@@ -57,12 +57,12 @@
     .iconAndDesc .descriptionWeather {
       margin-top: 30px;
       display: flex;
-      justify-content: center;
+      justify-content: flex-start;
      }
      .iconAndDesc .descriptionWind {
       margin-top: 30px;
       display: flex;
-      justify-content: center;
+      justify-content: flex-start;
      }
   
   .foreDays {
@@ -107,7 +107,8 @@
 
       @media (max-width: 600px) {
           .containerFl .title {
-            font-size: 16px;
+            font-size: 14px;
+            margin: 20px 20px -30px;
           }
           .containerFl .search #searchCity {
             width: 150px;

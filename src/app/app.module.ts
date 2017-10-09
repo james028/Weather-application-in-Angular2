@@ -23,7 +23,8 @@ import { ForecastWeatherComponent } from './weather/forecast-weather.component';
     BrowserModule,
     FormsModule,
     HttpModule,
-    WeatherRouting
+    WeatherRouting,
+    ReactiveFormsModule
   ],
   providers: [
     WeatherService

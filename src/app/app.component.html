@@ -1,3 +1,12 @@
+<nav class="cf">
+    <ul class="cf">
+        <li><a class="header" [routerLink]="['/']">See Weather for any location</a></li>
+        <li><a class="header"[routerLink]="['weather-forecast']">See Forecast Weather</a></li>
+        <li><a class="header"[routerLink]="['weather-location']">See Weather for current location</a></li>
+    </ul>
+        <a href="#" id="openup"></a>
+</nav>
+<router-outlet></router-outlet>
 <!--<nav class="navbar navbar-inverse navbar-static-top" role="navigation">
     <div class="container">
         <div class="navbar-header">
@@ -25,14 +34,6 @@
         </ul> 
     </div>
 </div>-->
-<nav class="cf">
-        <ul class="cf">
-            <li><a class="header" [routerLink]="['/']">See Weather for any location</a></li>
-            <li><a class="header"[routerLink]="['weather-forecast']">See Forecast Weather</a></li>
-            <li><a class="header"[routerLink]="['weather-location']">See Weather for your current location</a></li>
-        </ul>
-            <a href="#" id="openup"></a>
-    </nav>
-<router-outlet></router-outlet>
+
 
 

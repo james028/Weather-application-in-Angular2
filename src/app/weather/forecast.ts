@@ -1,9 +1,10 @@
 export class Forecast {
     constructor(
-        public cityName: string,
+        public cnt: string,
+        public day: string,
         public country: string,
         public icon: string,
-        public day: string,
+        public cityName: string,
         public tempMax: string,
         public tempMin: string,
         public desc: string,
