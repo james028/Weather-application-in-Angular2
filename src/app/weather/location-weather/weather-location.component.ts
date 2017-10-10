@@ -42,7 +42,8 @@ export class WeatherLocationComponent {
                   data.main.temp_max,
                   data.clouds.all,
                   data.sys.sunrise,
-                  data.sys.sunset)
+                  data.sys.sunset,
+                  data.dt);
           }
         );
     });

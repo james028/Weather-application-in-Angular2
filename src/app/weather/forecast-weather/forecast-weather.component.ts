@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormGroup, FormControl } from '@angular/forms';
-import { NgForm } from '@angular/forms';
+import { FormGroup, FormControl, NgForm } from '@angular/forms';
 import { DatePipe } from '@angular/common';
 import 'rxjs/Rx';
 
@@ -20,6 +19,7 @@ export class ForecastWeatherComponent implements OnInit {
   foreForm: FormGroup;
   ForecastArr: Forecast[] = [];
   myWeather: Weather;
+  show: boolean = false;
 
   ngOnInit() {
     this.foreForm = new FormGroup({
@@ -57,7 +57,8 @@ export class ForecastWeatherComponent implements OnInit {
               return this.ForecastArr;
             }
         )
-       
+
+
         console.log(NgForm);
         this.WService.nextCityWeather(this.foreForm.value.foreCity).subscribe(
           (data) => {

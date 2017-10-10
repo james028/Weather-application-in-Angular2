@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
-import { DatePipe } from '@angular/common';
+import { DatePipe, NgIf } from '@angular/common';
 import 'rxjs/Rx';
 
 import { Weather } from '../weather';
@@ -14,6 +14,7 @@ import { WeatherService } from '../weather.service';
 export class WeatherItemComponent implements OnInit {
   
   myWeather: Weather;
+  show: boolean = false;
   
   constructor(private WService: WeatherService) {}
 
@@ -38,7 +39,8 @@ export class WeatherItemComponent implements OnInit {
                         data.main.temp_max,
                         data.clouds.all,
                         data.sys.sunrise,
-                        data.sys.sunset);
+                        data.sys.sunset,
+                        data.dt);
           }
         )
         //this..patchValue(null);

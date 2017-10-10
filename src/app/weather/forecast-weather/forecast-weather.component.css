@@ -19,6 +19,23 @@
         height: 40px;
         width: 115px;
         color: #000000; }
+        .containerFl .search button {
+          width: 70px;
+          height: 40px;
+          position: relative;
+          background: 	#008000;
+          border-radius: 0;
+        }
+        .containerFl .search button:hover {
+            background: #003300;
+        }
+        .containerFl .search .glyphicon {
+          font-size: 24px;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
   
   .iconAndDesc {
     display: -webkit-box;
@@ -59,19 +76,22 @@
       margin-top: 30px;
       display: flex;
       justify-content: flex-start;
+        margin-bottom: 60px;
+        font-size: 32px;
      }
-     .iconAndDesc .descriptionWind {
-      margin-top: 30px;
+     .iconAndDesc .descriptionWind1 {
+      margin-top: 5px;
       display: flex;
       justify-content: flex-start;
+         font-size: 16px;
      }
   
   .foreDays {
     width: 100%;
     height: auto;
     background: #EEEEEE;
-    border: 0.5px solid black;
-    margin-bottom: 3px; }
+    /*border: 0.5px solid #888888;*/
+    margin-bottom: 4px; }
     .foreDays .foreDay {
       font-size: 28px;
       display: -webkit-box;
@@ -87,7 +107,7 @@
     .foreDays img {
       width: 120px;
       height: 120px;
-      margin-top: 30px; }
+      margin-top: 20px; }
     .foreDays .descTemp {
       display: -webkit-box;
       display: -webkit-flex;
@@ -106,16 +126,19 @@
       .foreDays .descTemp .descriptionTempNight {
         font-size: 22px; }
     .foreDays .descriptionWeather {
-      margin-top: 30px; }
+      margin-top: 30px;
+margin-bottom: 20px;}
       .foreDay1 {
         width: 150px;
         display: flex;
         justify-content: center;
       }
-  
+.sunrise, .icon img {
+    display: flex;
+    justify-content: flex-start;
+}
 
-
-      @media (max-width: 600px) {
+      @media (min-width: 500px) and (max-width: 600px) {
           .containerFl .title {
             font-size: 14px;
             margin: 20px 50px -30px;
@@ -125,6 +148,9 @@
           }
           .containerFl .search #searchDays {
             width: 110px;
+          }
+          .bigCity {
+              margin-bottom: 30px;
           }
           .foreDays img {
             width: 70px;
@@ -159,8 +185,71 @@
           }
           .iconAndDesc .descriptionWeather {
             margin-top: 20px; 
+              margin-bottom: 70px;
           }
           .descriptionWind {
             font-size: 14px;
           }
       }
+
+
+      @media (max-width: 499px) {
+          .containerFl .title {
+            font-size: 14px;
+            margin: 20px 60px -25px;
+          }
+          .containerFl .search #searchCity {
+            width: 140px;
+          }
+          .containerFl .search #searchDays {
+            width:110px;
+          }
+          .descriptionMain .bigCity p {
+              margin-bottom: 15px;
+              font-size: 28px;
+          }
+          .foreDays .foreDay {
+            font-size: 12px;
+            margin-top: 25px;
+            margin-left: 15px;
+          }
+          .foreDays img {
+            width: 50px;
+            height: 50px;
+            margin-top: 15px;
+          }
+          .foreDays .descTemp .descriptionTemp {
+            margin-right: 3px;
+            font-size: 16px;
+          }
+          .foreDays .descTemp .descriptionTempNight {
+            font-size: 12px;
+          }
+          .foreDays .descriptionWeather {
+            margin-top: 25px;
+            font-size: 12px;
+          }
+          .foreDays .descriptionWind {
+              font-size: 12px;
+          }
+          .iconAndDesc .descriptionTemp {
+            font-weight: bold;
+            font-size: 32px; 
+          }
+          .iconAndDesc .descriptionTempNight {
+            font-size: 18px; 
+          }
+          .iconAndDesc .descriptionWeather {
+            margin-top: 20px; 
+            margin-bottom: 70px;
+          }
+          .descriptionWind {
+            font-size: 12px;
+          }
+          .descriptionMain .descTemp {
+              display: flex;
+              justify-content: center;
+              color: blue;
+          }
+      }
+  
