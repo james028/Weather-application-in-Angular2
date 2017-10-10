@@ -21,6 +21,7 @@ export class ForecastWeatherComponent implements OnInit {
   myWeather: Weather;
   show: boolean = false;
 
+
   ngOnInit() {
     this.foreForm = new FormGroup({
         foreCity: new FormControl(''),
@@ -31,9 +32,6 @@ export class ForecastWeatherComponent implements OnInit {
  
 
   onSubmitFore() {
-
-
-    
     //console.log(this.foreForm);
         this.WService.forecastWeather(this.foreForm.value.foreCity, this.foreForm.value.foreDays).subscribe(
             data => { 

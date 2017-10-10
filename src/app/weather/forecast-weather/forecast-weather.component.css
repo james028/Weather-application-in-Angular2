@@ -138,7 +138,7 @@ margin-bottom: 20px;}
     justify-content: flex-start;
 }
 
-      @media (min-width: 500px) and (max-width: 600px) {
+      @media (min-width: 480px) and (max-width: 680px) {
           .containerFl .title {
             font-size: 14px;
             margin: 20px 50px -30px;
@@ -148,9 +148,6 @@ margin-bottom: 20px;}
           }
           .containerFl .search #searchDays {
             width: 110px;
-          }
-          .bigCity {
-              margin-bottom: 30px;
           }
           .foreDays img {
             width: 70px;
@@ -173,8 +170,12 @@ margin-bottom: 20px;}
             margin-top: 30px;
             margin-left: 8px;
           }
-          .iconAndDesc .bigCity {
+           .bigCity {
             font-size: 34px;
+            margin-bottom: 30px;
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
           }
           .iconAndDesc .descriptionTemp {
             font-weight: bold;
@@ -193,7 +194,7 @@ margin-bottom: 20px;}
       }
 
 
-      @media (max-width: 499px) {
+      @media (max-width: 479px) {
           .containerFl .title {
             font-size: 14px;
             margin: 20px 60px -25px;
@@ -204,12 +205,17 @@ margin-bottom: 20px;}
           .containerFl .search #searchDays {
             width:110px;
           }
-          .descriptionMain .bigCity p {
-              margin-bottom: 15px;
-              font-size: 28px;
+          .bigCity {
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+          }
+           .bigCity p {
+              margin-bottom: 10px;
+              font-size: 34px;
           }
           .foreDays .foreDay {
-            font-size: 12px;
+            font-size: 10px;
             margin-top: 25px;
             margin-left: 15px;
           }
@@ -220,17 +226,19 @@ margin-bottom: 20px;}
           }
           .foreDays .descTemp .descriptionTemp {
             margin-right: 3px;
-            font-size: 16px;
+            font-size: 14px;
           }
           .foreDays .descTemp .descriptionTempNight {
-            font-size: 12px;
+            font-size: 10px;
           }
           .foreDays .descriptionWeather {
             margin-top: 25px;
-            font-size: 12px;
+            font-size: 10px;
+            margin-right: 5px;
           }
           .foreDays .descriptionWind {
-              font-size: 12px;
+              font-size: 10px;
+              margin-right: 5px;
           }
           .iconAndDesc .descriptionTemp {
             font-weight: bold;
@@ -241,7 +249,8 @@ margin-bottom: 20px;}
           }
           .iconAndDesc .descriptionWeather {
             margin-top: 20px; 
-            margin-bottom: 70px;
+            margin-bottom: 60px;
+              font-size: 22px;
           }
           .descriptionWind {
             font-size: 12px;
@@ -249,7 +258,15 @@ margin-bottom: 20px;}
           .descriptionMain .descTemp {
               display: flex;
               justify-content: center;
-              color: blue;
           }
+          .sunrise {
+            display: flex;
+            justify-content: flex-start;
+            font-size: 16px;
+          }
+          .iconAndDesc .descriptionWind1 {
+            font-size: 12px;
+          }
+
       }
   
