@@ -47,7 +47,7 @@
     -ms-flex-pack: center;
     justify-content: center;
     margin: 20px auto 40px; }
-    .iconAndDesc .bigCity {
+     .bigCity {
       display: -webkit-box;
       display: -webkit-flex;
       display: -ms-flexbox;
@@ -55,7 +55,11 @@
       -webkit-box-pack: center;
       -webkit-justify-content: center;
       -ms-flex-pack: center;
-      justify-content: center; }
+      justify-content: center;
+      flex-direction: row;
+    font-size: 46px;
+    color: #000066;
+    font-weight: bold; }
     .iconAndDesc .descTemp {
       display: -webkit-box;
       display: -webkit-flex;
@@ -78,6 +82,7 @@
       justify-content: flex-start;
         margin-bottom: 60px;
         font-size: 32px;
+        color: #34495E;
      }
      .iconAndDesc .descriptionWind1 {
       margin-top: 5px;
@@ -176,6 +181,8 @@ margin-bottom: 20px;}
             display: flex;
             justify-content: center;
             flex-direction: row;
+            color: #000066;
+            font-weight: bold;
           }
           .iconAndDesc .descriptionTemp {
             font-weight: bold;
@@ -186,7 +193,7 @@ margin-bottom: 20px;}
           }
           .iconAndDesc .descriptionWeather {
             margin-top: 20px; 
-              margin-bottom: 70px;
+              margin-bottom: 60px;
           }
           .descriptionWind {
             font-size: 14px;
@@ -209,10 +216,10 @@ margin-bottom: 20px;}
             display: flex;
             justify-content: center;
             flex-direction: row;
-          }
-           .bigCity p {
-              margin-bottom: 10px;
-              font-size: 34px;
+            color: #000066;
+            font-weight: bold;
+            margin-bottom: 10px;
+            font-size: 34px;
           }
           .foreDays .foreDay {
             font-size: 10px;
@@ -240,6 +247,10 @@ margin-bottom: 20px;}
               font-size: 10px;
               margin-right: 5px;
           }
+          .iconAndDesc .foreDay1 {
+            display: flex;
+            justify-content: center;
+          }
           .iconAndDesc .descriptionTemp {
             font-weight: bold;
             font-size: 32px; 
@@ -249,7 +260,7 @@ margin-bottom: 20px;}
           }
           .iconAndDesc .descriptionWeather {
             margin-top: 20px; 
-            margin-bottom: 60px;
+            margin-bottom: 40px;
               font-size: 22px;
           }
           .descriptionWind {
@@ -266,6 +277,13 @@ margin-bottom: 20px;}
           }
           .iconAndDesc .descriptionWind1 {
             font-size: 12px;
+          }
+          .iconAndDesc img {
+            width: 150px;
+            height: 150px;
+          }
+          .descWindBott {
+            margin-bottom: 20px;
           }
 
       }

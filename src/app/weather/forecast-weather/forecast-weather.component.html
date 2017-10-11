@@ -28,14 +28,14 @@
                     <h2 class="descriptionTemp">{{myWeather.maxTemp}} &deg;C</h2>
                     <h4 class="descriptionTempNight">{{myWeather.minTemp}} &deg;C</h4>
                 </div>
-                    <h4 class="descriptionWeather">{{myWeather.description}}</h4>
+                    <p class="descriptionWeather">{{myWeather.description}}</p>
                     <h4 class="descriptionWind1" *ngIf="show">Wind speed:&nbsp;{{myWeather.wspeed}}&nbsp;m/s</h4>
                     <h4 class="descriptionWind1" *ngIf="show">Pressure:&nbsp;{{myWeather.pressure}}&nbsp;hPa</h4>
-                    <h4 class="descriptionWind1" *ngIf="show">Humidity:&nbsp;{{myWeather.humidity}}&nbsp;%</h4>
-                    <h4 class="sunrise" *ngIf="show"><span class="glyphicon glyphicon-arrow-up" aria-hidden="true">
-                            {{myWeather.sunrise*1000 | date:'HH:mm'}}</span></h4>
-                        <h4 class="sunrise" *ngIf="show"><span class="glyphicon glyphicon-arrow-down" aria-hidden="true">
-                            {{myWeather.sunset*1000 | date:'HH:mm'}}</span></h4>
+                    <h4 class="descriptionWind1 descWindBott" *ngIf="show">Humidity:&nbsp;{{myWeather.humidity}}&nbsp;%</h4>
+                    <p class="sunrise" *ngIf="show"><span class="glyphicon glyphicon-arrow-up" aria-hidden="true">
+                            {{myWeather.sunrise*1000 | date:'HH:mm'}}</span></p>
+                        <p class="sunrise" *ngIf="show"><span class="glyphicon glyphicon-arrow-down" aria-hidden="true">
+                            {{myWeather.sunset*1000 | date:'HH:mm'}}</span></p>
             </div>
         </div>   
     </div>
