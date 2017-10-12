@@ -5,7 +5,17 @@
           <form [formGroup]="foreForm" (ngSubmit)="onSubmitFore()">
             <div class="search">
                 <input id="searchCity" name="city" formControlName="foreCity" placeholder="City...">
-                <input id="searchDays" name="days" formControlName="foreDays" placeholder="(min: 1, max: 16)">
+                <input 
+                required
+                id="searchDays" 
+                name="days" 
+                formControlName="foreDays" 
+                placeholder="(min: 1, max: 16)">
+                <div *ngIf="days.touched && days.invalid" class="alert alert-danger">
+                    <div *ngIf="days.errors.required">Numbers of days is required.</div>
+                    <div *ngIf="days.errors.minlength">Minimum numbers of days must be 1.</div>
+                    <div *ngIf="days.errors.maxlength" >Maximum characters must be 2.</div>
+                </div>
                 <button id="btn" class="btn btn-primary btn-search" (click)="show = !show">
                     <span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
             </div>

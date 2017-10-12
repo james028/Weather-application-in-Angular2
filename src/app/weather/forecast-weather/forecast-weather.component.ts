@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormGroup, FormControl, NgForm } from '@angular/forms';
+import { FormGroup, FormControl, NgForm, Validators } from '@angular/forms';
 import { DatePipe } from '@angular/common';
 import 'rxjs/Rx';
 
@@ -25,11 +25,18 @@ export class ForecastWeatherComponent implements OnInit {
   ngOnInit() {
     this.foreForm = new FormGroup({
         foreCity: new FormControl(''),
-        foreDays: new FormControl('')
+        foreDays: new FormControl('', [
+          Validators.required,
+          Validators.minLength(1),
+          Validators.maxLength(2)
+        ])
 
     });
   }
  
+    get days() {
+      return this.foreForm.get('foreDays');
+    }
 
   onSubmitFore() {
     //console.log(this.foreForm);
