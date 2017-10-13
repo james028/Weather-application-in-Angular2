@@ -4,7 +4,11 @@
           <p class="title">Enter the place and number of days to see the forecast weather</p>
           <form [formGroup]="foreForm" (ngSubmit)="onSubmitFore()">
             <div class="search">
-                <input id="searchCity" name="city" formControlName="foreCity" placeholder="City...">
+                <input required
+                id="searchCity" name="city" formControlName="foreCity" placeholder="City...">
+                <div *ngIf="city.touched && city.invalid" class="alert alert-danger">
+                    <div *ngIf="city.errors.required">The name of the city is required.</div>
+                </div>
                 <input 
                 required
                 id="searchDays" 

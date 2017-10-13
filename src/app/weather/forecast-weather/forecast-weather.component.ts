@@ -24,7 +24,7 @@ export class ForecastWeatherComponent implements OnInit {
 
   ngOnInit() {
     this.foreForm = new FormGroup({
-        foreCity: new FormControl(''),
+        foreCity: new FormControl('', Validators.required),
         foreDays: new FormControl('', [
           Validators.required,
           Validators.minLength(1),
@@ -36,6 +36,9 @@ export class ForecastWeatherComponent implements OnInit {
  
     get days() {
       return this.foreForm.get('foreDays');
+    }
+    get city() {
+      return this.foreForm.get('foreCity');
     }
 
   onSubmitFore() {
